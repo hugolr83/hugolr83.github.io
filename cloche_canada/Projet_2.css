@@ -1,0 +1,540 @@
+/* Commun */
+
+/* Polices (Les polices ont été prises du site "https://www.fontsquirrel.com", ces dernières sont libre de droit.) */
+
+@font-face {
+	font-family: 'caviardreams';
+	src: url('caviardreams.ttf');
+}
+
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand.otf');
+}
+
+@font-face {
+	font-family: 'opensans';
+	src: url('OpenSans-Regular.ttf');
+}
+/* Titres */
+
+h1, h2, h3, h4 {
+	font-family: "quicksand";
+	color:#e9ac69;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 1%;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+h4 {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.sous-titre:before {
+	content:"→ ";
+}
+
+.sous-titre {
+	margin: 1% ;
+}
+
+.titre_alternatif {
+	font-size: 5em;
+	font-weight:lighter;
+}
+
+.remerciement {
+	font-size: 1.7em;
+}
+
+
+/* Header */
+
+#drapcanada_left {
+	position: relative;
+	float: left;
+	padding-top: 0px;
+}
+
+.titre_principal {
+	font-size: 3em;
+	color:#e9ac69;
+	text-align: center;
+	margin: 1%;
+
+}
+
+@media screen and (max-width: 600px) {
+	
+	#logo_header {
+		display: none;
+	}
+}
+
+
+/* Corps */
+
+body {
+	font-family: "opensans","Gill Sans", "American Typewriter", sans-serif;
+	font-size: 1em;
+	padding-top: 20px;
+	background-color: #294c5e;
+	color: #82949C;
+    text-align: justify ;
+}
+
+.fond_gris {
+	background-color: #F2F4F5;
+}
+
+.marge {
+	margin: 1%;
+	padding: 1px;
+}
+
+
+.btn-fond-bleu{
+	color: #fff;
+	background-color: #294c5e;
+	border-color: #e9ac69;
+}
+
+.btn-card{
+	color: #fff;
+	background-color: #294c5e;
+}
+
+.btn:hover{
+	color: #fff;
+	background-color: #e9ac69;
+}
+
+.separation {
+	background-color: #e9ac69;
+}
+
+.choix-retour .btn-fond-bleu {
+	margin: 5px;
+}
+
+.choix_retour {
+	border-top: thin solid #e9ac69;
+	padding-top: 10px;
+}
+
+/* Texte */
+
+.objet {
+	text-decoration: underline; 
+}
+
+
+.renseignement {
+	margin: 2% ;
+	padding-bottom: 8px;
+}
+
+.changement_prix {
+	color: red;
+	text-decoration: line-through;
+}
+
+i
+{
+	font-style: italic;
+}
+
+.genre {
+	text-align: center ; 
+	font-family: fantasy sans-serif ; 
+}
+
+.nom_site {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.promos {
+	margin-top: 2% ;
+	margin-bottom: 2% ;
+}
+
+.entourage_accueil {
+	font-weight: bold;
+	text-align: center;
+	padding: 18px;
+	border-top: thin solid #DADADA;
+	border-bottom: thin solid #DADADA;
+	background-color: #F8F8F8;
+}
+
+.fond_blanc {
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+.site {
+    text-decoration: underline ;
+    font-style: bold ;
+    color: #294c5e ; 
+}
+
+/* Image */
+
+.logo_bas {
+	width: 20%;
+	height: auto;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.logo_footer {
+	text-align: center;
+}
+
+#udem {
+	display: block ;
+	text-align: center ;
+	margin-left: auto ;
+	margin-right: auto ;
+	padding-bottom: 20px ;
+}
+
+.a_propos {
+	background-color: rgba(55, 186, 55, 0.87) ;
+	display: inline-block ; 
+	border: solid red ; 
+	padding: 1% ; 
+	display: block ;
+	margin: auto ; 
+	text-align: center ;
+}
+
+.home {
+	text-align: center;
+	padding-left: 50%;
+}
+
+#accueil_auteurs {
+	text-align: center;
+	font-weight:lighter;
+	padding-bottom: 20px;
+}
+
+.horloges {
+    text-align: center ; 
+}
+
+
+/* Tableaux */
+
+#tableau_choix_retour, #tableau_concurrence {
+	margin : 20px auto ;
+	text-align: center;
+	width: 100%;
+}
+
+#tableau_choix_retour {
+	border-top: thin solid #e9ac69;
+}
+
+#tableau_choix_retour th {
+	padding: 20px;
+	width: 50%;
+}
+
+
+#tableau_choix_retour td:nth-child(2n+1), #tableau_choix_retour th:nth-child(1){
+	border-right: thin solid #e9ac69;
+}
+
+#tableau_promo {
+	border: 2px solid black;
+	margin : 20px auto ;
+}
+
+#tableau_promo th {
+	border: 2px solid black;
+	padding: 4px 20px 4px 20px;
+}
+
+#tableau_promo td {
+	border: 1px solid black;
+	padding: 4px 20px 4px 20px;
+}
+
+#tableau_promo td:nth-child(2n+1) {
+	border-right: 2px solid black;
+	padding: 4px 20px 4px 20px;
+}
+
+.en-tete {
+	font-weight: normal;
+}
+
+.contour_tableau {
+	margin: 2%;
+}
+
+
+/* Card */
+
+.card-body {
+	position: center ; 
+	text-align: center ; 
+}
+
+.menu {
+	padding: 15px;
+}
+
+.menu .card {
+	display: inline-block ; 
+	padding-bottom: 50px auto ; 
+	margin-top: 10px;
+}
+
+.slogan {
+	font-weight: bold;
+}
+
+.description
+{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.menu, .card_link
+{
+	text-align: center;
+}
+
+.menu .card
+{
+	width: 18rem;
+}
+
+.menu .card-text
+{
+	height: 120px;
+}
+
+.card_link .card{
+	width: 20rem;
+	vertical-align: middle;
+	height: auto;
+	display: inline-block ; 
+	padding: 10px ; 
+	margin: 30px ; 
+	text-align: center ; 
+}
+
+.card-text
+{
+	height:160px;
+}
+
+.col-lg-4 {
+	padding: 15px;
+	text-align: center;
+}
+
+
+.card > .hommes {
+	border: rgba(23, 94, 255, 0.94) ;  ; 
+}
+
+
+
+/* Jumbotron & Navbar */
+
+.jumbotron {
+	text-align: center;
+	background-color: transparent;
+	margin: 0px;
+	padding: 20px;
+}
+
+.navbar {
+	background-color: red;
+	border: 1px solid black ;
+	margin: 1%;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar-nav {
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.navbar-nav .nav-item {
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+	}
+}
+
+
+/* Footer */
+
+#logodiro
+{
+	float: right; 
+	background-color: #F2F4F5;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+footer {
+	font-family: "caviardreams";
+	margin-top: 15px;
+}
+
+footer p {
+	display: inline;
+}
+
+footer img {
+	margin: 5px;
+}
+
+/* Formulaire */ 
+
+#formulaire {
+	padding: 10px;
+	margin: 5px;
+	border: 2px dashed rgb(125, 125, 125);
+}
+
+#formulaire div {
+	margin-top: 20px;
+}
+
+#formulaire input {
+	margin-left:7px;
+}
+
+#formulaire > div {
+	border-top: thin solid rgb(125, 125, 125);
+}
+
+
+@media screen and (max-width: 600px) {
+	.card-text {
+		display: none;
+	}
+}
+
+/* Présentation des couleurs */
+
+.couleur {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 5px;
+	border: thin solid black;
+	border-radius: 5px;
+}
+
+.bleu {
+	background-color: #294c5e;
+}
+
+.or {
+	background-color: #e9ac69;
+}
+
+.gris_ecriture {
+	background-color: #82949C;
+}
+
+
+/* SVG */
+
+.monSVG {
+	text-align: center;
+    padding-bottom: 3% ;
+}
+
+svg {
+	stroke: black;
+	stroke-width: 3;
+}
+
+text
+{
+	stroke-width: 1;
+	font-size: 40px;
+	font-family: "Gill Sans", "American Typewriter", sans-serif;
+	letter-spacing: 3px;
+	fill: #e9ac69;
+}
+
+#sapin
+{
+	fill:url(#gradientSapin);
+}
+
+#etoile
+{
+	stroke-width: 1;
+	fill: #FBF010;
+}
+
+.bougie
+{
+	stroke-width: 1;
+	fill: white;
+}
+
+.flamme
+{
+	stroke-width: 0;
+}
+
+#pied
+{
+	fill: #5D3908;
+}
+
+#pot
+{
+	fill: grey;
+}
+
+.boule1
+{
+	fill: url(#gradientBoule1);
+}
+
+.boule2
+{
+	fill: url(#gradientBoule2);
+}
+
+#guirlandeBig 
+{
+	stroke-width: 10;
+	stroke-linecap: round;
+	stroke: #F8EDC5;
+}
+
+#guirlandeSmall
+{
+	stroke-width: 2;
+}
+
+.svgmontre {
+    stroke : #294c5e ;
+    stroke-width : 3 ; 
+    fill : #F2F4F5 ;
+}
+

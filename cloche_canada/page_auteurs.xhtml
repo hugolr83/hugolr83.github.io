@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Auteurs du site</title>
+		<link rel="stylesheet" href="bootstrap.min.css" type="text/css" style="screen" />
+		<link rel="stylesheet" href="Projet_2.css" type="text/css" style="screen" />
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="accueil_auteurs">
+			<h2 class="titre_alternatif"><i>Auteurs du site</i></h2>
+
+			<p>Cette page va vous renseigner sur les créateurs du site, le cadre et le contexte. </p>
+			<p>De plus, vous pouvez  avoir accès aux pages <a class="btn btn-fond-bleu" href="page_design.xhtml" role="button"><i>Design</i></a> et <a class="btn btn-fond-bleu" href="page_analyse.xhtml" role="button"><i>Analyse</i></a></p>
+			<hr class="separation"/>
+			<p>Si vous voulez quitter cette page pour retourner magasiner sur notre site, faites votre choix ci-dessous:</p>
+			<div class="container" role="navigation">
+				<nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+					<ul class="navbar-nav text-md-center nav-justified w-100">
+						<li class="nav-item">
+							<a class="nav-link" href="index.xhtml">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="page_carillons.xhtml">Carillons</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="page_montres.xhtml">Montres</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="page_reveils.xhtml">Réveils</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="page_horloges.xhtml">Horloges</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="fond_gris apropos">
+			<div class="marge">
+				<h2 class="sous-titre-a_propos">Les créateurs du site</h2>
+				<p>Ce site a été créé par deux étudiants en Baccalauréat Informatique à l'UdeM dans le cadre d'un projet au sein du cours <i>Design et Développement Web</i>. Le sujet nous a été imposé par les démonstrateurs. Nous avons donc eu le sujet <i>Cloche Canada</i>, une compagnie qui vend des réveils et des cadrans de toutes sortes, y compris des carillons. Les deux auteurs sont :</p> 
+				<ul>
+					<li>Quentin Wolak</li>
+					<li>Hugo Lachieze-Rey</li>
+				</ul>
+
+				<div class="container">
+					<img id="udem" src="images/udem.png" height="120"/> 
+				</div>
+
+				<h2 class="sous-titre-a_propos">Les informations et les images du site </h2>
+				<p>
+					Les articles que vous trouverez dans ce site web ont principalement été tirées des sites respectifs des différentes marques (notamment pour les montres). De plus, pour les détails sur les articles, nous avons utilisé le site de  
+					<a href="http://www.labaie.com/webapp/wcs/stores/servlet/fr/labaie">La Baie d'Hudson</a>. <br/>
+					Autrement, les autres informations sont des connaissances personnelles et les images proviennent de <i>Google Images</i>.  
+				</p>
+
+				<h2 class="sous-titre-a_propos">Accès aux pages de renseignements</h2>
+				<p>
+					Pour avoir des détails sur le site web, notamment sur le thème choisi, les sites compétiteurs ou encore les attentes du public cible: <a href="page_analyse.xhtml">Analyse</a>.<br/>
+					Pour avoir des détails sur le site web, notamment sur les couleurs choisies, le modèle type de page ou encore les différentes versions du site: <a href="page_design.xhtml">Design</a>. 
+				</p>
+                <h2 class="sous-titre-a_propos">Nous contacter </h2>
+                <p>
+                    <img src="images/Arobase.png" height="25"/> : clochecanada.service@gmail.com ; <br/>
+                    <img src="images/telephone.png" height="25"/> : +1 (514) 438-586 .
+                </p>
+
+
+				<form action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post" id="formulaire" enctype="application/x-www-form-urlencoded">
+					<h2 class="sous-titre-a_propos">Sondage</h2>
+
+					<p>Si vous le désirez, vous pouvez répondre à ce court sondage. Veuillez noter que toutes vos réponses nous seront utiles afin d'améliorer notre site web même si vous n'avez effectué aucun achat. </p>
+
+					<div class="info_personnels">
+						<div class="parties" id="identite">
+							<label>
+								Nom : 
+								<input type="text" name="nom" size="22"/> 
+							</label>
+							<label for="prenom">
+								Prénom : 
+								<input type="text" name="prenom" size="22"/>
+							</label>
+							<label>
+								Courriel : 
+								<input type="email" name="courriel" size="40"/>   
+							</label>                    
+						</div>
+
+						<div class="parties" id="situation">
+							Vous êtes: 
+							<label>
+								<input type="radio" name="situation" value="quebec" id="quebec"/>
+								Résident Québécois</label>
+							<label>
+								<input type="radio" name="situation" value="canada" id="canada"/>
+								Canadien (hors Québec)</label>
+							<label>
+								<input type="radio" name="situation" value="france" id="france"/>
+								Français
+							</label>
+							<label>
+								<input type="radio" name="situation" value="autre" id="autre"/>
+								Autre
+							</label>
+							<p>Si vous avez coché <i>Autre</i>, veuillez s'il vous plaît nous indiquer de quel pays vous venez: </p>
+							<label>
+								<input type="text" name="autre" size="22"/>
+							</label>
+						</div>
+					</div>
+
+					<div class="magasinage">
+						<div class="parties" id="achat">
+							<p>Quel(s) achat(s) avez-vous effectué(s) ?</p>
+							<select name="promo" id="achat">
+								<option value="" selected="selected"></option>
+								<option value="Carillons">Carillons</option>
+								<option value="Montres">Montres</option>
+								<option value="Réveils">Réveils</option>
+								<option value="Horloges">Horloges</option>
+								<option value="Aucun">Aucun</option>
+							</select>
+						</div>
+
+						<div class="promotions">
+							<p>Avez-vous profité des rabais ?
+								<select name="promo" size="1" tabindex="6">
+									<option selected="selected" value="Oui">Oui</option>
+									<option value="Non">Non</option>
+								</select>
+							</p>
+							<p>Si les rabais vous ont déplu, dites-nous pourquoi ?</p>
+							<p><textarea name="promosnon" rows="4" cols="40" tabindex="4" placeholder="Votre mécontentement."></textarea></p>
+						</div>
+					</div>
+
+					<div class="validaiton">
+						<div class="lecture">
+							<p>Avez-vous lu les pages <i>Analyse</i> et <i>Design</i> ?</p>
+							<input type="checkbox" name="oui"/>
+							<label for="oui">Oui</label>
+							<input type="checkbox" name="non"/>
+							<label for="non">Non</label>
+						</div>
+
+						<div class="parties" id="boutons_fin">
+							<p class="marginLess">
+								<input type="submit" name="envoyer" value="Envoyer" tabindex="7"/>
+							</p>
+						</div>
+					</div>
+				</form>
+			</div>
+          </div>
+		
+		<footer>
+			<p class="home"><a href="index.xhtml"><img src="images/accueil.png" alt="accueil" height="25"/></a></p>  
+			<p id="logodiro"><img src="images/logodiro.png" alt="DIRO" height="20"/></p>
+		</footer>
+
+	</body>
+
+</html>

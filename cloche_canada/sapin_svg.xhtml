@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<link href="ex08__WOLAK1_LACHIEZE-REY2.css" type="text/css" rel="stylesheet"/>
+		<title>Carte de Noël</title>
+	</head>
+	<body>
+
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			 width="500" height="800">
+
+			<defs> 
+				<linearGradient id="gradientSapin" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+					<stop offset="0%" stop-color="#5CC239" stop-opacity="1"/>
+					<stop offset="100%" stop-color="#8CFF64" stop-opacity="1"/>
+				</linearGradient>
+
+				<radialGradient id="gradientFond" r="100%" cx="50%" cy="50%" fy="50%" fx="50%">
+					<stop offset="0%" style="stop-color:white; stop-opacity:1"/>
+					<stop offset="100%" style="stop-color:#2CDBDE; stop-opacity:1"/>
+				</radialGradient>
+
+				<radialGradient id="gradientBoule1" r="10%" cx="50%" cy="50%" fy="50%" fx="50%">
+					<stop offset="0%" style="stop-color:white; stop-opacity:1"/>
+					<stop offset="100%" style="stop-color:#F03434; stop-opacity:1"/>
+				</radialGradient>
+
+				<radialGradient id="gradientBoule2" r="90%" cx="50%" cy="50%" fy="50%" fx="50%">
+					<stop offset="0%" style="stop-color:#F03434; stop-opacity:1"/>
+					<stop offset="100%" style="stop-color:white; stop-opacity:1"/>
+				</radialGradient>
+
+				<path id="textPath" d="M120,80 Q200,0 280,80"/>
+				
+				<g id="bougie1">
+					<rect class="bougie" x="50" y="50" width="4" height="15"/>
+					<path class="flamme" d="M52,50 C44,40 60,40 52,50 " fill="none">
+						<animate attributeName="fill" begin="0s" dur="3s" values="#E8901A;#F4F110;#E8901A" repeatCount="indefinite"/>
+					</path>
+				</g>
+
+				<g id="bougie2">
+					<rect class="bougie" x="50" y="50" width="4" height="15"/>
+					<path class="flamme" d="M52,50 C44,40 60,40 52,50 " fill="none">
+						<animate attributeName="fill" begin="0.33s" dur="3s" values="#E8901A;#F4F110;#E8901A" repeatCount="indefinite"/>
+					</path>
+				</g>
+
+				<g id="bougie3">
+					<rect class="bougie" x="50" y="50" width="4" height="15"/>
+					<path class="flamme" d="M52,50 C44,40 60,40 52,50 " fill="none">
+						<animate attributeName="fill" begin="0.66s" dur="3s" values="#E8901A;#F4F110;#E8901A"  repeatCount="indefinite"/>
+					</path>
+				</g>
+			</defs>
+
+			<text>
+				<textPath xlink:href="#textPath">Joyeux Noël!</textPath>
+			</text>
+
+			<polyline id="sapin" points=" 200,100 300,450 100,450 200,100"/>
+
+			<path id="etoile" d=" M 162 96 L 191 96 L 200 70 L 209 96 L 238 96 L 214.5 112 L 223.5 138 L 200 122 L 176.5 138 L 185.5 112 Z" />
+
+			<use xlink:href="#bougie1" x="170" y="375" />
+			<use xlink:href="#bougie2" x="130" y="330" />
+			<use xlink:href="#bougie1" x="160" y="290" />
+			<use xlink:href="#bougie3" x="120" y="230" />
+			<use xlink:href="#bougie2" x="77" y="280" />
+			<use xlink:href="#bougie1" x="60" y="340" />
+			<use xlink:href="#bougie3" x="225" y="300" />
+			<use xlink:href="#bougie2" x="200" y="220" />
+			<use xlink:href="#bougie2" x="105" y="180" />
+			<use xlink:href="#bougie1" x="170" y="230" />
+			<use xlink:href="#bougie3" x="153" y="140" />
+
+			<rect id="pied" x="170" y="450" width="60" height="30"/>
+
+			<polyline id="pot" points="140,480 260,480 245,540 155,540 140,480" />
+
+			<g id="boules">
+				<circle class="boule1" cx="140" cy="430" r="10"/>
+				<circle class="boule2" cx="260" cy="430" r="10"/>
+				<circle class="boule2" cx="160" cy="340" r="10"/>
+				<circle class="boule1" cx="240" cy="340" r="10"/>
+				<circle class="boule2" cx="180" cy="250" r="10"/>
+				<circle class="boule1" cx="220" cy="250" r="10"/>
+				<circle class="boule1" cx="200" cy="160" r="10"/>
+			</g>
+
+			<g id="guirlandeBig">
+				<path d="M 125,370 Q 200,450 275,370" fill="none"/>
+				<path d="M 147 290 Q 200,350 253,290" fill="none"/>
+				<path d="M 170 210 Q 200,250 230,210" fill="none"/>
+			</g>
+
+			<g id="guirlandeSmall">
+				<path d="M 125,370 Q 200,450 275,370" fill="none"/>
+				<path d="M 147 290 Q 200,350 253,290" fill="none"/>
+				<path d="M 170 210 Q 200,250 230,210" fill="none"/>
+			</g>
+		</svg>
+	</body>
+</html>
